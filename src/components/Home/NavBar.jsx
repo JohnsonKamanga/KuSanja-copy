@@ -127,10 +127,10 @@ function NavBar(props) {
       </div>
       {!isSingedIn && (
         <div className="flex flex-col lg:flex-row text-sm justify-end lg:mr-2">
-          <div className="mb-1 lg:my-0 lg:mx-4 p-1 bg-[#d5b263] rounded-[4px] text-[#293040] font-semibold">
+          <div role="button" className="mb-1 lg:my-0 lg:mx-4 p-1 bg-[#d5b263] hover:bg-[#d6ab46] duration-300 transition-colors rounded-[4px] text-[#293040] font-semibold hover:cursor-pointer">
             Sign in
           </div>
-          <div className="mt-1 mb-3 lg:mt-0 lg:mb-0 lg:mx-4 p-1 bg-[#d5b263] rounded-[4px] text-[#293040] font-semibold">
+          <div role="button" className="mt-1 mb-3 lg:mt-0 lg:mb-0 lg:mx-4 p-1 bg-[#d5b263] hover:bg-[#d6ab46] duration-300 transition-colors rounded-[4px] text-[#293040] font-semibold hover:cursor-pointer">
             Sign up
           </div>
         </div>
