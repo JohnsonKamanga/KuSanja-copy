@@ -4,7 +4,7 @@ import Features from "../Features/Features";
 import FAQ from "../FAQ/FAQ";
 import About from "../About/About";
 import LandingPage from "../LandingPage/LandingPage";
-import Dashboard from "../Dashoboard/Dashboard";
+import Dashboard from "../Dashboard/Dashboard";
 
 export const routes = createBrowserRouter([
     {
