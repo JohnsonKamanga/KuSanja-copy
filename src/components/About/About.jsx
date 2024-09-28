@@ -5,8 +5,8 @@ function About() {
       <h2 className="headings mb-5">About</h2>
       <div className="flex flex-col justify-center">
         
-        <div className="flex flex-col lg:flex-row text-start">
-        <p className="p-2 border-white border-[1px] lg:mx-2 lg:w-[50%] rounded-xl">
+        <div className="flex flex-col lg:flex-row w-fit text-start lg:h-[300px] border-white border-[1px] rounded-xl">
+        <p className="p-2 border-white my-1 lg:p-8 lg:my-0 lg:w-[50%] rounded-xl">
           At KuSanja, our mission is simple: to empower small businesses with
           the tools they need to thrive in an increasingly competitive market.
           We understand the challenges that come with running a small business,
@@ -18,7 +18,7 @@ function About() {
           that when you’re organized, you can focus on what truly
           matters—growing your business and serving your customers.
         </p>
-        <p className="p-2 border-white border-[1px] rounded-xl my-2 lg:mx-2 lg:w-[50%]">
+        <p className="p-2 border-white lg:border-l-[1px] border-opacity-55 my-1 lg:p-8 lg:my-0 lg:w-[50%]">
           {" "}
           KuSanja is more than just a software tool; it's your business
           assistant. We’re committed to providing you with the resources and
