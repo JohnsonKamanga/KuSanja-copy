@@ -1,6 +1,7 @@
 import Logo from "../../assets/logo-no-background.png";
 import { useEffect, useState } from "react";
 import { Cross1Icon, HamburgerMenuIcon } from "@radix-ui/react-icons";
+import { NavLink } from "react-router-dom";
 
 function NavBar(props) {
   const homeRef = props.homeRef;
@@ -124,16 +125,27 @@ function NavBar(props) {
           {isSingedIn && <div className="mx-2">Dashboard</div>}
         </nav>
       </div>
+
+
       {!isSingedIn && (
         <div className="flex flex-col lg:flex-row text-sm justify-end lg:mr-2">
-          <div className="mb-1 lg:my-0 lg:mx-4 p-1 bg-[#d5b263] rounded-[4px] text-[#293040] font-semibold">
+
+          <button className="mb-1 lg:my-0 lg:mx-4 p-1 bg-[#d5b263] rounded-[4px] text-[#293040] font-semibold">
+          <NavLink to="/SignIn">
             Sign in
-          </div>
-          <div className="mt-1 mb-3 lg:mt-0 lg:mb-0 lg:mx-4 p-1 bg-[#d5b263] rounded-[4px] text-[#293040] font-semibold">
+            </NavLink>
+          </button>
+
+          <button className="mt-1 mb-3 lg:mt-0 lg:mb-0 lg:mx-4 p-1 bg-[#d5b263] rounded-[4px] text-[#293040] font-semibold">
+            <NavLink to="/SignUp">
             Sign up
-          </div>
+            </NavLink>
+          </button>
+
         </div>
       )}
+
+
     </div>
   );
 }
