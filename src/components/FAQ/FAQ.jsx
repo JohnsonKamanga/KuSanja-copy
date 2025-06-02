@@ -1,6 +1,4 @@
 import * as Accordion from "@radix-ui/react-accordion";
-import Footer from "../Home/Footer";
-import NavBar from "../Home/NavBar";
 import { ChevronDownIcon } from "@radix-ui/react-icons";
 
 function FAQ() {
@@ -8,7 +6,7 @@ function FAQ() {
     <div className="min-h-screen flex flex-col justify-center text-white font-sora">
       
       <div className="p-1 flex flex-col items-center lg:text-lg">
-        <h2 className="text-xl lg:text-2xl">FAQ</h2>
+        <h2 className="headings">FAQ</h2>
        <p className="text-lg lg:text-xl p-1">Got questions? We've got answers. Here are some of the most common
         questions we receive:</p>
         <Accordion.Root
