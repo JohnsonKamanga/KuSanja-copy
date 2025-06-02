@@ -9,9 +9,12 @@ import {
 
 function Features() {
   return(
-    <div className="min-h-screen flex flex-col justify-center">
+    <div className="min-h-screen flex flex-col justify-center items-center">
+      <div className="p-3">
+        <br></br>
+      </div>
   <div className="flex flex-col justify-center text-center p-1 mt-5">
-      <h2 className="text-4xl">Features</h2>
+      <h2 className="headings">Features</h2>
       <p className="text-2xl">
         Discover the powerful features of KuSanja that make managing your
         business a breeze

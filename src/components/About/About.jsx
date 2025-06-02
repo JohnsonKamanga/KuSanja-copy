@@ -1,12 +1,12 @@
-import Footer from "../Home/Footer";
-import NavBar from "../Home/NavBar";
 
 function About() {
   return (
     <div className="min-h-screen flex flex-col justify-center text-white text-center font-sora p-2">
+      <h2 className="headings mb-5">About</h2>
       <div className="flex flex-col justify-center">
-        <h2 className="text-2xl">About</h2>
-        <p>
+        
+        <div className="flex flex-col lg:flex-row w-fit text-start lg:h-[300px] border-white border-[1px] rounded-xl">
+        <p className="p-2 border-white my-1 lg:p-8 lg:my-0 lg:w-[50%] rounded-xl">
           At KuSanja, our mission is simple: to empower small businesses with
           the tools they need to thrive in an increasingly competitive market.
           We understand the challenges that come with running a small business,
@@ -16,15 +16,20 @@ function About() {
           story began with a desire to help small business owners save time and
           reduce the stress of managing their day-to-day activities. We believe
           that when you’re organized, you can focus on what truly
-          matters—growing your business and serving your customers. KuSanja is
-          more than just a software tool; it's your business assistant. We’re
-          committed to providing you with the resources and support you need to
-          succeed. Our team is dedicated to continuously improving our platform,
-          ensuring that it evolves with the ever-changing needs of small
-          businesses. Join us on our journey to make business management easier
-          and more efficient for everyone. With KuSanja, you’re not just getting
-          a tool—you’re getting a partner dedicated to your success.
+          matters—growing your business and serving your customers.
         </p>
+        <p className="p-2 border-white lg:border-l-[1px] border-opacity-55 my-1 lg:p-8 lg:my-0 lg:w-[50%]">
+          {" "}
+          KuSanja is more than just a software tool; it's your business
+          assistant. We’re committed to providing you with the resources and
+          support you need to succeed. Our team is dedicated to continuously
+          improving our platform, ensuring that it evolves with the
+          ever-changing needs of small businesses. Join us on our journey to
+          make business management easier and more efficient for everyone. With
+          KuSanja, you’re not just getting a tool—you’re getting a partner
+          dedicated to your success.
+        </p>
+        </div>
       </div>
     </div>
   );

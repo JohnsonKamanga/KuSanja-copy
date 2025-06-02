@@ -8,11 +8,12 @@ function NavBar(props) {
   const featuresRef = props.featuresRef;
   const aboutRef = props.aboutRef;
   const faqRef = props.faqRef;
+  const activeRef = props.activeRef;
+  const setActiveRef = props.setActiveRef;
 
   const [isSingedIn, setIsSignedIn] = useState(false);
   const [showDropDown, setShowDropDown] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [activeRef, setActiveRef] = useState(homeRef);
 
   const handleDropDown = () => {
     const navBar = document.getElementById("navBar");
@@ -40,12 +41,12 @@ function NavBar(props) {
     return window.removeEventListener("resize", () => {
       console.log("removing resize listener");
     });
-  }, [windowWidth]);
+  }, [windowWidth, showDropDown]);
 
   return (
     <div
       id="navBar"
-      className="flex flex-col lg:flex-row justify-between w-full overflow-hidden transition-all h-14 bg-white items-center text-center font-[200] bg-opacity-5 backdrop-blur-md sticky top-0 font-sora"
+      className="flex flex-col lg:flex-row justify-between w-full overflow-hidden transition-all h-14 bg-white items-center text-center font-[200] bg-opacity-5 backdrop-blur-md fixed font-sora"
     >
       <div className="flex flex-col lg:flex-row w-full lg:w-fit items-center">
         <div className="h-[56px] w-full lg:w-fit flex items-center justify-between mr-5">
